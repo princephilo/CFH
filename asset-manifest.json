@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/CFH/static/css/main.03b2bc7e.css",
+    "main.js": "/CFH/static/js/main.09b9918f.js",
+    "index.html": "/CFH/index.html",
+    "main.03b2bc7e.css.map": "/CFH/static/css/main.03b2bc7e.css.map",
+    "main.09b9918f.js.map": "/CFH/static/js/main.09b9918f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.03b2bc7e.css",
+    "static/js/main.09b9918f.js"
+  ]
+}
