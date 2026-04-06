@@ -1,0 +1,44 @@
+.contributor-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  background: rgba(0, 212, 255, 0.08);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  transition: var(--transition);
+}
+
+.contributor-badge:hover {
+  border-color: var(--primary);
+  background: rgba(0, 212, 255, 0.12);
+}
+
+.contributor-badge.small {
+  padding: 3px 8px;
+  gap: 4px;
+}
+
+.badge-icon {
+  font-size: 18px;
+}
+
+.contributor-badge.small .badge-icon {
+  font-size: 14px;
+}
+
+.badge-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.badge-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.badge-desc {
+  font-size: 10px;
+  color: var(--text-muted);
+}

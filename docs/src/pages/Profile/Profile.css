@@ -1,0 +1,97 @@
+.profile-page {
+  min-height: calc(100vh - 140px);
+  background: #f5f7fb;
+  padding: 2rem 1rem 3rem;
+}
+
+.profile-card {
+  max-width: 950px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+.profile-top {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.profile-avatar {
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-info h1 {
+  margin: 0 0 0.35rem;
+  color: #111827;
+}
+
+.profile-info p {
+  margin: 0.3rem 0;
+  color: #6b7280;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.profile-section {
+  margin-top: 1.8rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid #eef2f7;
+}
+
+.profile-section h3 {
+  margin: 0 0 1rem;
+  color: #111827;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.profile-bio-text,
+.empty-text {
+  color: #374151;
+  line-height: 1.6;
+}
+
+.profile-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+@media (max-width: 700px) {
+  .profile-card {
+    padding: 1.3rem;
+  }
+
+  .profile-top {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,29 @@
+.spec-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.spec-chip {
+  padding: 6px 14px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+  text-transform: capitalize;
+  font-family: 'Inter', sans-serif;
+}
+
+.spec-chip:hover {
+  border-color: var(--primary);
+}
+
+.spec-chip.active {
+  background: rgba(0, 212, 255, 0.15);
+  border-color: var(--primary);
+  color: var(--primary);
+}
