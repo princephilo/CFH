@@ -1,0 +1,99 @@
+circuit-fix-hub/
+├── .gitignore
+├── README.md
+├── docker-compose.yml
+│
+├── backend/
+│   ├── package.json
+│   ├── .env
+│   ├── server.js
+│   ├── config/
+│   │   └── db.js
+│   ├── middleware/
+│   │   ├── auth.js
+│   │   └── upload.js
+│   ├── models/
+│   │   ├── User.js
+│   │   ├── Issue.js
+│   │   ├── Solution.js
+│   │   ├── Comment.js
+│   │   └── ForumPost.js
+│   ├── routes/
+│   │   ├── auth.js
+│   │   ├── issues.js
+│   │   ├── solutions.js
+│   │   ├── forum.js
+│   │   ├── ai.js
+│   │   └── users.js
+│   ├── controllers/
+│   │   ├── authController.js
+│   │   ├── issueController.js
+│   │   ├── solutionController.js
+│   │   ├── forumController.js
+│   │   ├── aiController.js
+│   │   └── userController.js
+│   ├── services/
+│   │   ├── aiService.js
+│   │   └── imageAnalysis.js
+│   └── utils/
+│       └── helpers.js
+│
+├── frontend/
+│   ├── package.json
+│   ├── public/
+│   │   └── index.html
+│   └── src/
+│       ├── index.js
+│       ├── App.js
+│       ├── App.css
+│       ├── api/
+│       │   └── axios.js
+│       ├── context/
+│       │   └── AuthContext.js
+│       ├── components/
+│       │   ├── Navbar/
+│       │   │   ├── Navbar.js
+│       │   │   └── Navbar.css
+│       │   ├── Footer/
+│       │   │   ├── Footer.js
+│       │   │   └── Footer.css
+│       │   ├── CircuitSimulator/
+│       │   │   ├── CircuitSimulator.js
+│       │   │   └── CircuitSimulator.css
+│       │   ├── AIChat/
+│       │   │   ├── AIChat.js
+│       │   │   └── AIChat.css
+│       │   ├── IssueCard/
+│       │   │   ├── IssueCard.js
+│       │   │   └── IssueCard.css
+│       │   └── ContributorBadge/
+│       │       ├── ContributorBadge.js
+│       │       └── ContributorBadge.css
+│       └── pages/
+│           ├── Home/
+│           │   ├── Home.js
+│           │   └── Home.css
+│           ├── Login/
+│           │   ├── Login.js
+│           │   └── Login.css
+│           ├── Register/
+│           │   ├── Register.js
+│           │   └── Register.css
+│           ├── Dashboard/
+│           │   ├── Dashboard.js
+│           │   └── Dashboard.css
+│           ├── SubmitIssue/
+│           │   ├── SubmitIssue.js
+│           │   └── SubmitIssue.css
+│           ├── IssueDetail/
+│           │   ├── IssueDetail.js
+│           │   └── IssueDetail.css
+│           ├── Forum/
+│           │   ├── Forum.js
+│           │   └── Forum.css
+│           ├── Profile/
+│           │   ├── Profile.js
+│           │   └── Profile.css
+│           └── Leaderboard/
+│               ├── Leaderboard.js
+│               └── Leaderboard.css

@@ -1,0 +1,127 @@
+.leaderboard-page {
+  min-height: calc(100vh - 140px);
+  background: #f5f7fb;
+  padding: 2rem 1rem 3rem;
+}
+
+.leaderboard-header {
+  max-width: 1000px;
+  margin: 0 auto 1.5rem;
+}
+
+.leaderboard-header h1 {
+  margin: 0 0 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #111827;
+}
+
+.leaderboard-header p {
+  margin: 0;
+  color: #6b7280;
+}
+
+.leaderboard-list {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}
+
+.leaderboard-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 1.3rem;
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.05);
+}
+
+.leaderboard-rank {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #2563eb;
+  min-width: 48px;
+}
+
+.leaderboard-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #fff;
+  font-size: 1.45rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leaderboard-content h3 {
+  margin: 0 0 0.35rem;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: #111827;
+}
+
+.leaderboard-content p {
+  margin: 0 0 0.45rem;
+  color: #6b7280;
+}
+
+.leaderboard-score {
+  color: #374151;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 0.7rem;
+  font-weight: 600;
+}
+
+.leaderboard-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.no-badges {
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+.leaderboard-empty {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 18px;
+  padding: 2rem;
+  text-align: center;
+  color: #64748b;
+  border: 1px solid #e5e7eb;
+}
+
+@media (max-width: 700px) {
+  .leaderboard-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .leaderboard-rank,
+  .leaderboard-avatar {
+    margin: 0 auto;
+  }
+
+  .leaderboard-content h3,
+  .leaderboard-score {
+    justify-content: center;
+  }
+
+  .leaderboard-badges {
+    justify-content: center;
+  }
+}
